@@ -1,14 +1,17 @@
-<template>
-  <div>Hello {{ value }}</div>
-</template>
-
 <script>
+
+import Header from '@/components/Header.vue';
+
 export default {
-  name: "App",
-  data() {
-    return {
-      value: "Wonderful World!"
-    };
-  }
-};
+  components: {
+		Header
+	}};
+
 </script>
+
+<template>
+
+  <Header />
+  <router-view />
+
+</template>
